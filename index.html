@@ -42,12 +42,26 @@
         <li id="last-item"><a href="./pages/contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div id="fixed-sidebar">
+      <li><a href="#">News</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Notices</a></li>
+    </div>
+
     <header id="header-container">
       <p id="main-title">My Webpage</p>
     </header>
-    <div id="back-to-top-button">
+
+    <button onclick="topFunction()" id="back-to-top-button" title="Go to top">
       <img src="assets/back-to-top.png" width="80" height="80" />
-    </div>
+    </button>
+    <script>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
   <footer>
     <nav id="footer-nav">

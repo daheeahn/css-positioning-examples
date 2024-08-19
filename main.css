@@ -7,7 +7,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 body nav {
@@ -62,8 +62,9 @@ body nav ul li a:active {
 }
 
 #back-to-top-button {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
 }
 
 #current-page {
@@ -141,4 +142,15 @@ footer nav {
   background-color: lightgrey;
   margin-bottom: 20px;
   text-align: center;
+}
+
+#fixed-sidebar {
+  position: sticky;
+  margin-top: 10px;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: lightblue;
 }
